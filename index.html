@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>대명리조트</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="apple-mobile-web-app-title" content="daemyung ski locker">
+	<meta name="description" content="대명 스키락카">
+	<meta name="keywords" content="대명, 대명리조트, daemyung, 스키락카, 스키, 보드, 스키보관, 보드보관">
+	<meta property="og:site_name" content="대명리조트">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="대명 스키락카">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
+	<link rel="stylesheet" type="text/css" href="css/front/layout.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/front/contents.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/front/flat/blue.css" media="all" />
+	<script type="text/javascript" src="js/front/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/front/global.js"></script>
+	<script type="text/javascript" src="js/front/icheck.js"></script>
+	<script type="text/javascript" src="js/front/jquery.modal.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="main-container main">
+			<div class="inner">
+				<h1><img src="images/front/common/logo.png" alt="대명리조트 스키락카" /></h1>
+				<p class="season">비발디파크 스키월드 18/19 시즌</p>
+				<div class="left">
+					<em class="title">스키&amp;보드 보관소 <strong>1차판매</strong></em>
+					<p class="date">2018.10.19(오전 10시) ~ 2018.10.23</p>
+					<ul class="iconMenu">
+						<li>
+							<a href="sell_info.html"><img src="images/front/common/icon_main_01.png" alt="판매안내" /><p>판매안내</p></a>
+						</li>
+						<li>
+							<a href="guide.html"><img src="images/front/common/icon_main_02.png" alt="구매 및 이용안내" /><p>구매 및 이용안내</p></a>
+						</li>
+						<li>
+							<a href=""><img src="images/front/common/icon_main_03.png" alt="배치도 보기" /><p>배치도 보기</p></a>
+						</li>
+					</ul>
+					<ul class="noticeBox">
+						<li>
+							<a href="#n">
+								<h4>17/18 스키시즌권 구매자에 한하여 온라인 선착순 판매</h4>
+								<p>비발디파크 외 타사이트 구매자는 10월 16일(일)까지<br />사용자정보 등록한 고객에 한함</p>
+							</a>
+						</li>
+						<li>
+							<a href="#n">
+								<h4>2차 판매 예정</h4>
+								<p>10.27~스키장 개장 2일 전까지<br/>(시즌권자, 비시즌권자 모두 구매가능)</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- 로그아웃 -->
+				<div class="right">
+					<div class="loginBox">
+						<h3>Login</h3>
+						<ul class="insertField">
+							<li class="name"><label class="">이름</label><input type="text" placeholder="실명을 입력해 주세요." /></li>
+							<li class="birth"><label>생년월일</label><input type="text" placeholder="예) 19820101" /></li>
+							<li class="gender">
+								<label>성별</label>
+								<span class="genderWrap">
+									<input type="radio" class="iCheck" name="gender" id="man" /><label for="man" class="gender">남</label>
+									<input type="radio" class="iCheck" name="gender" id="girl" /><label for="girl" class="gender">여</label>
+								</span>
+							</li>
+							<li class="mobileNum"><label>휴대폰</label><input type="text" placeholder="예) 01054326789" /></li>
+						</ul>
+						<div class="seasonTicket">
+							<span><input type="radio" name="seasonUser" class="iCheck" id="seasonGet" /><label for="seasonGet">시즌권자</label></span>
+							<span><input type="radio" name="seasonUser" class="iCheck" id="seasonNot" /><label for="seasonNot">비시즌권자</label></span>
+						</div>
+						<div class="checkList">
+							<ul>
+								<li><input type="checkbox" id="allCheck" class="iCheck" /><label for="allCheck">모두 동의하기</label></li>
+								<li><input type="checkbox" id="privacy01" class="iCheck" /><label for="privacy01">개인정보 수집 및 화용 동의(필수)</label><a href="#alert-pri01" rel="modal:open">[전문보기]</a></li>
+								<li><input type="checkbox" id="privacy02" class="iCheck" /><label for="privacy02">개인정보 취급 위탁 동의(필수)</label><a href="#alert-pri02" rel="modal:open">[전문보기]</a></li>
+							</ul>
+						</div>
+						<a href="#alert-password" class="btn_login" rel="modal:open">로그인</a>
+					</div>
+					<a href="#n" class="btn_buy">구매하기</a>
+				</div>
+				<!-- 로그인 -->
+<!--
+				<div class="right">
+					<div class="loginBox">
+						<h3>씨엠이<span>님</span></h3>
+						<div class="seasonTicket">
+							<span><input type="radio" name="seasonUser" class="iCheck" id="seasonNot" checked /><label for="seasonNot">비시즌권자</label></span>
+						</div>
+						<a href="#n" class="btn_login">로그아웃</a>
+					</div>
+					<a href="#n" class="btn_buy">구매하기</a>
+				</div>
+-->
+				
+				<div id="alert-password" class="modal popupStyle">
+					<h3>알림</h3>
+					<p class="desc">비밀번호를 입력하세요</p>
+					<input type="password" />
+					<em>내용내용 텍스트를 입력하세요 내용내용 텍스트를 입력하세요 내용내용 텍스트를 입력하세요</em>
+					<a href="#n" class="btn_submit">확인</a>
+				</div>	
+				<div id="alert-pri01" class="modal popupStyle wide">
+					<h3>개인정보 수집 및 활용 동의</h3>
+					<div class="cell">
+						<h4>개인정보 수집·이용 (필수)</h4>
+						<table class="normal-table">
+							<colgroup>
+								<col width="30%" />
+								<col width="50%" />
+								<col width="20%" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th>수집항목</th>
+									<th>이용목적</th>
+									<th>보유기간</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>이름, 생년월일, 성별, 휴대폰번호</td>
+									<td>스키, 보드 보관소 이용권 구매를 위한 본인확인, 고지 의무사항 전달, 불만처리</td>
+									<td><strong>가입 후 2년</strong></td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="point"><strong>※ 14세 미만의 미성년자는 법정 대리인이 대신 동의해 주시기 바랍니다.</strong></p>
+					</div>
+					<div class="cell">
+						<h4>개인정보 수집 동의 거부의 권리</h4>
+						<p>신청자는 필수적 개인정보의 수집, 이용과 관련한 위 사항에 대하여 원하지 않는 경우 동의를 거부할 수 있으나 동의하지 않을 경우 <strong>이용권 구매</strong>가 제한됩니다.</p>
+					</div>
+				</div>
+				<div id="alert-pri02" class="modal popupStyle wide">
+					<h3>개인정보취급 위탁 동의</h3>
+					<h4>개인정보취급 위탁 동의 안내</h4>
+					<p class="gap">㈜대명티피앤이는 서비스 이행 및 향상을 위하여 이용자의 개인정보를 위탁하고 있으며, 관계 법령에 따라 개인정보가 안전하게 관리될 수 있도록 필요한 사항을 규정하고 있습니다. 또한 공유하는 정보는 해당 목적을 달성하기 위하여 필요한 최소한의 정보에 국한됩니다.</p>
+					<table class="normal-table">
+						<colgroup>
+							<col width="50%" />
+							<col width="50%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>수집항목</th>
+								<th>이용목적</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>㈜대명코퍼레이션, ㈜씨엠이소프트</td>
+								<td>스키/보드 보관소 선점시스템 개발 및 보관소 이용권 판매 및 운영을 위한 고객 정보 확인</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>				
+			</div>
+		</div>
+		<footer>
+			<p>COPYRIGHTS © DAEMYUNG THEME PARK &amp; ENTERTAINMENT. All Rights Reserved.</p>
+		</footer>
+	</div>
+</body>
+</html>
